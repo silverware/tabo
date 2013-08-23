@@ -1,0 +1,10 @@
+Welcome to tacticboards.xaga.de,
+Thank You for registering at tacticboards.xaga.de. 
+From now You may log in to http://tacticboads.xaga.de/?r=site/login using the following email and password:
+
+Email: ###EMAIL###
+Password: ###PASSWORT###
+
+
+Yours sincerely
+"tacticboards.xaga.de" - Admin Team

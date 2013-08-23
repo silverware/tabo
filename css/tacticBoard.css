@@ -1,0 +1,120 @@
+body {
+
+}
+
+input {
+	border: 1px solid #A6C9E2;
+}
+
+#toolbar {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 640px;
+  /*background: url("redmond/images/ui-bg_flat_100_fcfdfd_40x100.png") repeat-x scroll 50% 50% #FCFDFD;*/
+}
+
+#toolbar .explanation {
+    font-weight: bold;
+    margin-left: 15px;
+    
+}
+
+#canvas_container {
+	padding: 0px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	float: left;
+	position: relative;
+}
+
+.canvas_container {
+	float: left;
+	position: relative;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+.canvas_container canvas {
+	cursor:pointer;
+}
+
+#player_tab {
+	width: 248px;
+	height: 448px;
+	display: inline-block;
+	border: 1px solid #C5DBEC;
+	border-radius: 4px;
+}
+
+.playerTable {
+	width: 100%;
+  border-collapse : collapse;
+}
+.playerTable td {
+	padding: 5px;
+  border-bottom: 1px solid #C5DBEC;
+}
+.playerTable input {
+	padding:2px;
+	margin: 0;
+	border: 1px solid #A6C9E2;
+	font: 9pt Arial,Helvetica,sans-serif;
+}
+
+.playerTable label {
+	font: 9pt Arial,Helvetica,sans-serif;
+}
+
+.playerTable input.editable {
+	border: 1px solid #A6C9E2 !important;
+}
+
+.playerTable .dragHandle {
+  cursor: move;
+}
+
+.playerTable tr:hover {
+  background-color: #E8F3FB;
+}
+
+.addPlayerLink {
+   margin-top: 20px;
+   float: right;
+}
+
+.addPlayerLink span {
+   float: left;
+}
+
+.playerTable .positionType {
+	width: 15px;
+  height: 15px;
+  border-radius: 2px;
+}
+
+.playerTable .positionSelect {
+	width: 50px;
+}
+
+.playerTable input.invisible {
+    background-color: transparent;
+	border: 1px solid transparent;
+}
+
+.player {
+	width: 20px;
+	height: 20px;
+}
+
+.outwards {
+	background-color: red;
+}
+
+.home {
+	background-color: blue;
+}
+
+
+
+

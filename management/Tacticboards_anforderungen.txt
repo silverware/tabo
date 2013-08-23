@@ -1,0 +1,11 @@
+* screenshot funktion -> printdruck
+* Kommentierfunktion
+* Spielszene nachstellen (alle paar sec ein frame -> interpolation)
+* Versionierung
+* verschiedenfarbiges Zeichnen -> Legende erstellen
+* mannschaftsname ändern
+* Selection created event -> hasControls = false
+* Linien von spieler aufziehen
+* Facebook parser
+
+https://de.foursquare.com/user/17214490/checkin/4edaa2b26c2547bc62fd101a?s=CWUswQBkfEYal3oto3FL458azfM&ref=fb&source=fbwall
