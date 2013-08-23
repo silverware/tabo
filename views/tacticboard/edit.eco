@@ -1,0 +1,7 @@
+<script type="text/javascript">
+      require(["utils/canvasRenderer"], function(canvasRenderer) {
+        canvasRenderer.init("canvasId");
+      });
+    </script>
+<p>This is my web page</p>
+<canvas id="canvasId" resize></canvas>

@@ -1,0 +1,68 @@
+<script>
+require(["settings/Settings"], function(Settings) {
+  window.settings = new Settings({
+    i18n: <%- @json @i18n.settings %>,
+    tournamentId: "<%= @tournament.id %>"
+  });
+});
+</script>
+
+<div id="content">
+  <h1><%= @i18n.settings.header %></h1>
+    <!--
+    <fieldset>
+      <legend><%= @i18n.settings.color %></legend>
+
+    </fieldset>
+    <fieldset>
+      <legend><%= @i18n.settings.logo %></legend>
+
+    </fieldset>
+
+    -->
+    <fieldset>
+      <legend><%= @i18n.settings.colorSelection %></legend>
+        <%= @formWithActionFor @tournament.colors, "/#{@tournament.id}/settings/colors", (form) => %>
+          <div class="control-group">
+            <label class="control-label"><%= @i18n.settings.theme %></label>
+            <div class="controls">
+              <span class="btn btn-link" id="selectTheme"><i class="icon-picture"></i><%= @i18n.settings.selectTheme %></span>
+            </div>
+          </div>
+          <%= form.colorSelect @i18n.settings.background, "background", {placeholder: @i18n.color} %>
+          <br />
+          <%= form.colorSelect @i18n.settings.content, "content", {placeholder: @i18n.color} %>
+          <%= form.colorSelect @i18n.settings.contentText, "contentText", {placeholder: @i18n.color} %>
+          <br />
+          <%= form.colorSelect @i18n.settings.footer, "footer", {placeholder: @i18n.color} %>
+          <%= form.colorSelect @i18n.settings.footerText, "footerText", {placeholder: @i18n.color} %>
+          <%= form.button @i18n.settings.applyColor %>
+        <% end %>
+    </fieldset>
+
+    <fieldset>
+      <legend><%= @i18n.settings.publicName %></legend>
+        <%= @infoHint => %>
+          <%= @i18n.settings.publicNameInfo %><br /><%= @i18n.settings.publicNameExample %>
+        <% end %>
+
+        <dl class="dl-horizontal">
+          <dt>Name</dt>
+          <dd id="publicNameValue">
+            <% if @tournament.publicName: %>
+              <a href="<%= @rootPath%>/<%= @tournament.publicName %>" target="_blank"><%= @tournament.publicName %></a>
+            <% else: %>
+              <%= @i18n.settings.publicNameMisses %>
+              <span id="createPublicName" class='btn btn-link'><i class="icon-plus-sign"></i><%= @i18n.settings.createPublicName %></span>
+            <% end %>
+          </dd>
+        </dl>
+    </fieldset>
+    <!--
+    <fieldset>
+      <legend><%= @i18n.settings.messages %></legend>
+
+Nachrichten aktivieren/deaktivieren
+
+  -->
+</div>
